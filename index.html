@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Balance</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header>
+    <h2 class="account-heading">Account Balance</h2>
+</header>
+    
+    <div class="results-container">
+        <div class="search-criteria">
+            <input type="text" class="description" placeholder="Description">
+            <input type="text" class="amount" placeholder="Amount">
+            <select class="amount-type">
+                <option value="select" selected>--select--</option>
+                <option value="Income">Incomes</option>
+                <option value="Expense">Expenses</option>
+            </select>
+            <div>
+                <button class="account-button">Add</button>
+            </div>
+        </div>
+        <div class="error-message"></div>
+        <div class="account-info">
+            <div class="total-income">
+                <h3 class="income-heading">Incomes</h3>
+                <div class="income-container"></div>
+                <div class="income-calc">Total: <span id="total-income"></span></div>
+            </div>
+            <div class="total-expense">
+                <h3 class="expense-heading">Expenses</h3>
+                <div class="expense-container"></div>
+                <div class="expense-calc">  Total: <span id="total-expense"></span></div>
+            </div>
+        </div>
+        <div class="account-balance">
+            <h3 class="balance-heading">Balance</h3>
+            <div class="balance-description"></div>
+
+        </div>
+
+    </div>
+<main>
+    <div class="account">
+
+    </div>
+</main>
+    <script src="./date.js"></script>
+    <script src="./validate.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+.account-heading {
+
+    text-align: left;
+    margin-top: 3rem;
+    border: 1px solid black;
+    width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    
+}
+.search-criteria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description,.amount{
+    margin-left: 1rem;
+    outline: 0;
+    border-color: darkgray;
+    border-style: solid;
+    height: 1.5rem;
+    border-radius: 2px;
+    padding-left: 0.5rem;
+}
+.account-button,.amount-type {
+    border-radius: 2px;
+    margin-left: 1rem;
+    outline: 0;
+    border-color: darkgray;
+    border-style: solid;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 5rem;
+}
+.results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 80rem;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.account-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+    
+
+}
+.total-income {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(114, 114, 114);
+    width: 35%;
+    margin: 1rem;
+    padding: 1rem;
+}
+.total-expense{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(114, 114, 114);
+    width: 35%;
+    margin: 1rem;
+    padding: 1rem;
+
+}
+.account-balance {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    border: 1px solid;
+    margin-left: 10rem;
+    width: 60rem;
+}
+.income-divs,.expense-divs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+.income-calc,.expense-calc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+.income-container,.expense-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-content: center;
+    
+    
+}
+
+.income-heading,.expense-heading {
+    text-align: center;
+    border-bottom: 1px black solid;
+    padding-bottom: 0.2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    
+}
+
+
+.income-description,.expense-description {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-bottom: 1px black solid;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    
+}
+.income-amount,.expense-amount {
+    display: flex;
+    justify-content: center;
+    width: 13%;
+    border-bottom: 1px black solid;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+.income-time,.expense-time {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-bottom: 1px black solid;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+.error-message {
+    display: none;
+    margin-top: 1rem;
+    text-align: center;
+    color: red;
+}
+.balance-heading {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+    width: 60rem;
+}
+.balance-description {
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+#total-income,#total-expense {
+    margin-left: 1rem;
+}
