@@ -49,7 +49,7 @@ const accountInformation = {
         this.incomes.push({
             description,
             amount,
-            time: dateToday()
+            time: getDate()
         })
     },
     addExpense: function () {
@@ -58,7 +58,7 @@ const accountInformation = {
         this.expenses.push({
             description,
             amount,
-            time: dateToday()
+            time: getDate()
         })
     },
     totalIncome: function () {
@@ -86,6 +86,7 @@ const accountInformation = {
 
 /* Event listener for add button*/
 accountButton.addEventListener('click', event => {
+    event.preventDefault()
     const isValid = validateInputs()
     if (isValid) {
         if (accountType.value == 'Income') {
@@ -138,7 +139,6 @@ if (!getAccountInfo) {
     localStorage.setItem('accountInfo', JSON.stringify(accountInformation))
     displayAccountInfo(accountInformation)
 } else {
-    const getAccountInfo = JSON.parse(localStorage.getItem('accountInfo'))
     accountInformation.incomes = getAccountInfo.incomes
     accountInformation.expenses = getAccountInfo.expenses
     displayAccountInfo(accountInformation)
