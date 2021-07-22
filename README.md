@@ -4,6 +4,7 @@
 An account balance sheet displayed using local storage.
 Total expenses and incomes are stored in the local storage and displayed from local storage.
 New expenses or incomes can be added.
+Moment library is used to display the dates.
 Validations are checked on the user input fields.
 Media queries are implemented for responsive pages.
 

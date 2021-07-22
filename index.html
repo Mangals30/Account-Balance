@@ -6,55 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Balance</title>
     <link rel="shortcut icon" href="./images/euro.png" type="image/x-icon">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-    <header class="wrapper">
+    <header class="py by wrapper">
         <h1>Account Balance</h1>
     </header>
-    <div class="wrapper">
-        <div class="search-grid">
-            <input type="text" class="description" placeholder="Description">
-            <input type="text" class="amount" placeholder="Amount">
-            <select class="amount-type">
+    <div class="py by wrapper">
+        <form action="submit" class="grids py search-grid">
+            <input type="text" name="description" class="description" placeholder="Description">
+            <input type="text" name="amount" class="amount" placeholder="Amount">
+            <select class="amount-type" name="amount-type">
                 <option value="select" selected disabled>--select--</option>
                 <option value="Income">Incomes</option>
                 <option value="Expense">Expenses</option>
             </select>
-            <button class="btn">Add</button>
-        </div>
+            <a href="#" class="btn" type="submit">Add</a>
+        </form>
         <div class="error-message"></div>
-        <div class="account-info">
-            <div class="totals">
+        <div class="grids py account-info">
+            <div class="totals by py">
                 <h3 class="income-heading">Incomes</h3>
                 <div class="income-container income-expense"></div>
                 <div class="income-calc">Total: <span id="total-income"></span></div>
             </div>
-            <div class="totals">
+            <div class="totals by py">
                 <h3 class="expense-heading">Expenses</h3>
                 <div class="expense-container income-expense"></div>
                 <div class="expense-calc"> Total: <span id="total-expense"></span></div>
             </div>
         </div>
-        <div class="account-balance">
-            <h3>Balance</h3>
-            <div class="balance-description"></div>
+        <div class="py">
+            <div class="grids py by account-balance">
+                <h3>Balance</h3>
+                <div class="balance-description"></div>
+            </div>
         </div>
     </div>
 
 
-
-
-
-    <main>
-        <div class="account">
-
-
-    </main>
-    <script src="./date.js"></script>
-    <script src="./validate.js"></script>
-    <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+        integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/validate.js"></script>
+    <script src="./scripts/functions.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
