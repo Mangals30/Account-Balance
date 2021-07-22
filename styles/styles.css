@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #333;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,32 +12,43 @@ body {
     font: 1rem;
     line-height: 1.4;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
 }
 
 .wrapper {
     max-width: 960px;
-    margin: auto;
-    padding: 1rem;
-    border: 1px solid #333;
+    margin: auto auto;
     text-align: center;
 }
 
-header.wrapper {
-    margin: 1rem auto;
-}
-
-.search-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+.py {
     padding: 1rem;
 }
 
-.search-grid>* {
+.by {
+    border: 1px solid var(--primary-color);
+}
+
+.grids {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+header.wrapper {
+    margin: 3rem auto 1rem;
+}
+
+.search-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.search-grid * {
     padding: 0.5rem;
 }
 
 .btn {
+    display: inline-block;
+    text-decoration: none;
     border: none;
     color: #f3f3f3;
     background: gray;
@@ -42,33 +57,24 @@ header.wrapper {
 }
 
 .btn:hover {
-    background: #333;
+    background: var(--primary-color);
 }
 
 .account-info {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    padding: 1rem;
 }
 
-.totals {
-    border: 1px solid rgb(114, 114, 114);
-    padding: 1rem;
-}
 
 .totals>*:first-child,
 .totals>*:last-child,
 .income-divs>*,
 .expense-divs>* {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .income-divs,
 .expense-divs {
-    display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    grid-gap: 1rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
@@ -78,11 +84,7 @@ header.wrapper {
 }
 
 .account-balance {
-    border: 1px solid #333;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    padding: 1rem;
 }
 
 .account-balance>*:first-child,
@@ -92,7 +94,7 @@ header.wrapper {
 }
 
 .account-balance>*:first-child {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--primary-color);
     padding-bottom: 1rem;
 }
 
